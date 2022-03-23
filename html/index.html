@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roda_BlipsCreator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor" style="display: none;">
+        <input type="hidden" name="" value="" class="coordx">
+        <input type="hidden" name="" value="" class="coordy">
+        <input type="hidden" name="" value="" class="coordz">
+        <input type="hidden" name="" value="no" class="adminval">
+        <div class="menu">
+            <h1>PERSONAL BLIPS</h1>
+            <h2>Name</h2>
+            <h2>Sprite</h2>
+            <h2>Color</h2>
+            <h2>Coords</h2>
+            <form action="" class="formulario" id="formul">
+                <div class="inputsall">
+                    <input type="text" required id="nombre">
+                    <br>
+                    <input type="number" required id="sprite">
+                    <br>
+                    <input type="number" required id="color">
+                    <br>
+                    <input type="text" readonly id="coords">
+                    <input class="btnps" type="submit" value="Create Blip">
+                </div>
+            </form>
+            <div class="boton">Get Coords</div>
+            <div style="display: none;" class="admin">Admin Blips</div>
+            <div class="btndelete">Delete Blips</div>
+        </div>
+    </div>
+    <div class="deleteblips" style="display: none;">
+        <div class="menudelete">
+            <img style="display: none;" src="https://cdn.discordapp.com/attachments/937063390961074226/944997297190744064/rodalogo.png" alt="">
+            <form method="post" class="formblip" id="formblip" style="display: none;">
+                <select name="roles" class="blipsDelete" id="getBlipsSelect"> 
+                    <option value="none">Select Blip</option>
+                </select>
+                <input class="BotonDelete" type="submit" value="Delete Blip">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
