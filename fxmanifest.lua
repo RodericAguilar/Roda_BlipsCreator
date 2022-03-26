@@ -30,17 +30,3 @@ files {
     'html/app.js', 
     'html/style.css'
 } 
-
-escrow_ignore {
-    'Server/Config.lua',
-    'Shared.lua'
-}
-
-server_exports {
-    'KickMember',
-    'SetRole',
-    'DeleteRole',
-    'ChangeNickName',
-    'BanDiscordUser',
-    'MutePlayer'
-}
